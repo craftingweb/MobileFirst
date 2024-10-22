@@ -1,3 +1,5 @@
+@import "vars";
+
 html {
   box-sizing: border-box;
 }
@@ -14,12 +16,12 @@ body {
 }
 
 .header {
-  background-color: #2b4074;
-}
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: $accent;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 @media (min-width: 640px) {
@@ -27,6 +29,7 @@ body {
     padding: 20px;
   }
 }
+
 .container {
   padding: 0 20px;
 }
@@ -41,6 +44,7 @@ body {
     padding: 0px;
   }
 }
+
 .menu__btn {
   height: 40px;
   width: 40px;
@@ -48,15 +52,15 @@ body {
   border-radius: 3px;
   border: none;
   position: relative;
+  &::after {
+    content: "";
+    box-shadow: 0 4px 0 0 $accent, 0 8px 0 0 $accent;
+    position: absolute;
+    height: 2px;
+    width: 15px;
+    background-color: $accent;
+    border-radius: 1px;
+    left: 13px;
+    top: 15px;
+  }
 }
-.menu__btn::after {
-  content: "";
-  box-shadow: 0 4px 0 0 #2b4074, 0 8px 0 0 #2b4074;
-  position: absolute;
-  height: 2px;
-  width: 15px;
-  background-color: #2b4074;
-  border-radius: 1px;
-  left: 13px;
-  top: 15px;
-}/*# sourceMappingURL=style.css.map */
