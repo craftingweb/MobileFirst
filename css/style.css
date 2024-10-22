@@ -1,3 +1,13 @@
+.call__text {
+  font-family: "Dosis-Light";
+  font-weight: 300;
+}
+
+.call__btn, .call__title {
+  font-family: "Roboto-Medium";
+  font-weight: 500;
+}
+
 @font-face {
   font-family: "Roboto-Medium";
   font-weight: 500;
@@ -282,5 +292,54 @@ body {
   .top-slider__.text {
     font-size: 24px;
     line-height: 26px;
+  }
+}
+.call {
+  background-color: #2b4074;
+  padding: 40px 0;
+  color: #fff;
+  text-align: center;
+}
+.call__title {
+  font-size: 24px;
+  font-style: normal;
+  line-height: 24px;
+  margin-bottom: 15px;
+}
+.call__text {
+  margin-bottom: 40px;
+}
+.call__btn {
+  padding: 16px 15px;
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+  background-color: #f9f6e5;
+  color: #2b4074;
+  font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .call {
+    text-align: left;
+  }
+  .call__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .call__box {
+    max-width: 427px;
+  }
+  .call__text {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .call__inner {
+    padding: 0 80px;
+  }
+  .call__box {
+    max-width: 427px;
   }
 }/*# sourceMappingURL=style.css.map */
