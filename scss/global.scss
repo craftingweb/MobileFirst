@@ -1,0 +1,67 @@
+@import "vars";
+@import "fonts";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+button {
+  padding: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-width: 320px;
+  overflow-x: hidden;
+  font-family: "Roboto-Regular", "Arial", "sans-serif";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: $default-color;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.title {
+  font-size: 24px;
+  line-height: 28px;
+  @extend %robotoCondensed-400;
+  padding-bottom: 28px;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background-color: $accent;
+
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+  }
+}
