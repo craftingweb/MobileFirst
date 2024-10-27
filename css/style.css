@@ -573,7 +573,7 @@ a {
   }
   .services__item {
     width: 25%;
-    min-height: 277px;
+    min-height: 230px;
   }
   .services__item:nth-child(2), .services__item:nth-child(6) {
     border-right: none;
