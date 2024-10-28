@@ -463,3 +463,19 @@
     }
   }
 }
+
+.project {
+  text-align: center;
+  padding: 20px 0 40px;
+  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+  &__title {
+    color: white;
+    margin-bottom: 40px;
+    &::after {
+      background-color: white;
+    }
+  }
+  &__item-img {
+    border-radius: 4px;
+  }
+}

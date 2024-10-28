@@ -583,4 +583,19 @@ a {
     padding: 21px 9px 5px;
     min-height: 255px;
   }
+}
+.project {
+  text-align: center;
+  padding: 20px 0 40px;
+  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+}
+.project__title {
+  color: white;
+  margin-bottom: 40px;
+}
+.project__title::after {
+  background-color: white;
+}
+.project__item-img {
+  border-radius: 4px;
 }/*# sourceMappingURL=style.css.map */
